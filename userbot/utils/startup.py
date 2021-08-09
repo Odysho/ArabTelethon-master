@@ -81,7 +81,7 @@ async def startupmessage():
         if msg_details:
             await iqthon.check_testcases()
             message = await iqthon.get_messages(msg_details[0], ids=msg_details[1])
-            text = message.text + "\n\n**⌔︙ اهلا وسهلا لقد قمت باعاده تشغيل تليثون العرب تمت بنجاح**"
+            text = message.text + "\n\n\n\n**⌔∮⪼ تمت إعادة تشغيل الـبوت بـنـجـاح❕**"
             await iqthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await iqthon.send_message(
@@ -206,7 +206,7 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "⌔︙ لا تحذف هذه المجموعة أو تغير إلى مجموعة (إذا قمت بتغيير المجموعة ، فسيتم فقد كل شيئ .)"
+        descript = ""
         _, groupid = await create_supergroup(
             "مجموعه بوت تليثون الخاص بك", iqthon, Config.TG_BOT_USERNAME, descript
         )
