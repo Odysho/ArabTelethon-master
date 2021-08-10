@@ -48,7 +48,7 @@ async def check_bot_started_users(user, event):
     check = get_starter_details(user.id)
     if check is None:
         start_date = str(datetime.now().strftime("%B %d, %Y"))
-        notification = f"👤 {_format.mentionuser(user.first_name , user.id)} has started me.\
+        notification = f"👤 {_format.mentionuser(user.first_name , user.id)} hass started me.\
                 \n**ID: **`{user.id}`\
                 \n**Name: **{get_display_name(user)}"
     else:
