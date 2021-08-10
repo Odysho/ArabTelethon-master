@@ -109,7 +109,6 @@ async def bot_start(event):
                         \n\n**⌔︙ البوت خاص بسورس :** [TELETHON FOR ARABS](https://t.me/M4_STORY)"
         buttons = [
             (
-                Button.url("تنصيب سورسنا", "https://heroku.com/deploy?template=https://github.com/klanrali/Telethon-Arab-helper"),
                 Button.url(
                     "قناه المساعد",
                     "https://t.me/yzzzy",
